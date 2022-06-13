@@ -1,1 +1,1 @@
-目前還在學習Github的功能
+Still learning how to use Github.
