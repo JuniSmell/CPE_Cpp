@@ -1,1 +1,1 @@
-# TungHaiCppDesignClass
+目前還在學習Github的功能
