@@ -5,12 +5,12 @@ using namespace std;
 bool whoDead(int,int);
 
 int main(){
-	int solve[14];				//»s§@ªí®æ¡A¨ì®É­Ô¬dªí¥Îªº¡C 
-	for(int i=1;i<14;i++){		//¦n¤H¼Æ¶q¡C 
-		for(int j=i;;j++){		//±þ¤Hªº³ø¼Æ¦ì¸m¡C 
-			if(whoDead(j,i)){	//¦pªG§ä¨ì¦¨¥\ªº¡A 
-				solve[i]=j;		//´N°O¿ý¤U¨Ó¡A
-				break;			//µ²§ô³o­Ó°j°é¡C 
+	int solve[14];					//è£½ä½œè¡¨æ ¼ï¼Œåˆ°æ™‚å€™æŸ¥è¡¨ç”¨çš„ã€‚ 
+	for(int i=1;i<14;i++){				//å¥½äººæ•¸é‡ã€‚ 
+		for(int j=i;;j++){			//æ®ºäººçš„å ±æ•¸ä½ç½®ã€‚ 
+			if(whoDead(j,i)){		//å¦‚æžœæ‰¾åˆ°æˆåŠŸçš„ï¼Œ 
+				solve[i]=j;		//å°±è¨˜éŒ„ä¸‹ä¾†ï¼Œ
+				break;			//çµæŸé€™å€‹è¿´åœˆã€‚ 
 			}
 		}
 	}
@@ -33,9 +33,9 @@ int main(){
 bool whoDead(int murde, int kind){
 	int dead=0;
 	for(int i=0;i<kind;i++){
-		dead=(dead+murde-1)%(2*kind-i);//²Äi¦¸¦ºªº¤Hªº¦ì¸m¡Ai±q0¶}©l¼Æ 
-		if(dead<kind){	//¦pªG¦³¦º¤Hªº¦ì¸m¦bkind¥H«e¡A¤]´N¬O¦n¤H¦º¤F¡C 
-			return 0;	//¦^¶Ç¥¢±Ñ¡C 
+		dead=(dead+murde-1)%(2*kind-i);		//ç¬¬iæ¬¡æ­»çš„äººçš„ä½ç½®ï¼Œiå¾ž0é–‹å§‹æ•¸ 
+		if(dead<kind){				//å¦‚æžœæœ‰æ­»äººçš„ä½ç½®åœ¨kindä»¥å‰ï¼Œä¹Ÿå°±æ˜¯å¥½äººæ­»äº†ã€‚ 
+			return 0;			//å›žå‚³å¤±æ•—ã€‚ 
 		}
 	}
 	return 1;
